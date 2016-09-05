@@ -1,0 +1,247 @@
+ ################################################################### 
+ # WARNING: this module is deprecated.                             # 
+ # Please use CondCore.CondDB.CondDB_cfi.py                        # 
+ ################################################################### 
+L1TRawToDigi Sequence configured for Stage-2 (2016) trigger. 
+# Conditions read from  CMS_CONDITIONS  via FrontierProd 
+L1TCalorimeter Sequence configured for Stage-2 (2016) trigger. 
+L1TMuon Sequence configured for Stage-2 (2016) trigger. 
+L1TGlobal Sequence configured for Stage-2 (2016) trigger. 
+L1TCalorimeter Conditions configured for Stage-2 (2016) trigger. 
+L1TMuon Conditions configured for Stage-2 (2016) trigger. 
+L1TGlobal Conditions configured for Stage-2 (2016) trigger. 
+L1TReEmulPath sequence:  
+simEcalTriggerPrimitiveDigis+simHcalTriggerPrimitiveDigis+simCaloStage2Layer1Digis+simCaloStage2Digis+simDtTriggerPrimitiveDigis+simCscTriggerPrimitiveDigis+simTwinMuxDigis+simBmtfDigis+simEmtfDigis+simOmtfDigis+simGmtCaloSumDigis+simMuonQualityAdjusterDigis+simGmtStage2Digis+simGtExtFakeStage2Digis+simGtStage2Digis
+cms.Schedule(csctfDigis+dttfDigis+gtDigis+caloStage1Digis+caloStage1FinalDigis+caloStage1LegacyFormatDigis+gctDigis+bmtfDigis+caloStage2Digis+gmtStage2Digis+gtStage2Digis+siPixelDigis+siStripDigis+ecalDigis+ecalPreshowerDigis+hcalDigis+muonCSCDigis+muonDTDigis+muonRPCDigis+castorDigis+scalersRawToDigi+tcdsDigis+totemTriggerRawToDigi+totemRPRawToDigi, MEtoEDMConverter, simEcalTriggerPrimitiveDigis+simHcalTriggerPrimitiveDigis+simCaloStage2Layer1Digis+simCaloStage2Digis+simDtTriggerPrimitiveDigis+simCscTriggerPrimitiveDigis+simTwinMuxDigis+simBmtfDigis+simEmtfDigis+simOmtfDigis+simGmtCaloSumDigis+simMuonQualityAdjusterDigis+simGmtStage2Digis+simGtExtFakeStage2Digis+simGtStage2Digis)
+DEBUG 2016-08-16 12:19:09,453: 	 Executing command: 'submit'
+DEBUG 2016-08-16 12:19:09,454: 	 Found CRAB cache file /afs/cern.ch/user/f/fmeng/.crab3
+DEBUG 2016-08-16 12:19:09,471: 	 Checking credentials
+DEBUG 2016-08-16 12:19:09,471: 	 Found proxy file /tmp/x509up_u44852
+DEBUG 2016-08-16 12:19:09,471: 	 Getting proxy life time left
+DEBUG 2016-08-16 12:19:10,080: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -timeleft
+ output : 43152
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 12:19:10,585: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -actimeleft
+ output : 43151
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 12:19:10,585: 	 Proxy valid for 11:59:12 hours
+INFO 2016-08-16 12:19:10,585: 	 Will use CRAB configuration file crab3_2015D_turnon_16_16new.py
+DEBUG 2016-08-16 12:19:10,585: 	 Loading CRAB configuration file.
+DEBUG 2016-08-16 12:19:10,606: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2016-08-16 12:19:10,732: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 12:19:10,732: 	 Checking credentials
+DEBUG 2016-08-16 12:19:10,732: 	 Found proxy file /tmp/x509up_u44852
+DEBUG 2016-08-16 12:19:10,732: 	 Getting proxy life time left
+DEBUG 2016-08-16 12:19:11,237: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -timeleft
+ output : 43150
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 12:19:11,743: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -actimeleft
+ output : 43150
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 12:19:11,743: 	 Proxy valid for 11:59:10 hours
+DEBUG 2016-08-16 12:19:12,248: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u44852 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+/cms/uscms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 12:19:12,613: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-08-16 12:19:12,721: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 12:19:12,721: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-08-16 12:19:12,721: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng_cmsweb.cern.ch for credential name
+DEBUG 2016-08-16 12:19:13,224: 	 Executing : 
+ command : myproxy-info -l 636d357baa3ec31ce0a2357e2fd568934f039cc9 -s myproxy.cern.ch
+ output : username: 636d357baa3ec31ce0a2357e2fd568934f039cc9
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 573:47:40  (23.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 12:19:13,225: 	 Myproxy is valid: 2065660
+DEBUG 2016-08-16 12:19:13,225: 	 Command use: submit
+DEBUG 2016-08-16 12:19:13,226: 	 Options use: ['-c', 'crab3_2015D_turnon_16_16new.py']
+DEBUG 2016-08-16 12:19:13,566: 	 CRABClient version: 3.3.1607.patch2
+DEBUG 2016-08-16 12:19:13,566: 	 Instance is prod
+DEBUG 2016-08-16 12:19:13,566: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-08-16 12:19:13,566: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-08-16 12:19:13,566: 	 Started submission
+DEBUG 2016-08-16 12:19:13,566: 	 Working on /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_16_16_277194newiso
+DEBUG 2016-08-16 12:19:14,031: 	 Loading required information from the environment
+DEBUG 2016-08-16 12:19:14,031: 	 Found CMSSW_8_0_14 for slc6_amd64_gcc530 with base /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14
+DEBUG 2016-08-16 12:19:14,046: 	 UNIQUE NAME: tarUUID a0ba862a-94bf-421c-8dd4-e6ba6a9e473d 
+DEBUG 2016-08-16 12:19:14,046: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = False
+config.General.transferOutputs = True
+config.General.workArea = 'crab_projects'
+config.General.requestName = 'ECAL_turnon_2016D_16_16_277194newiso'
+config.section_('JobType')
+config.JobType.psetName = 'eleTreeProd_Stage2_new807_SKtest_16_16.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.allowUndistributedCMSSW = True
+config.section_('Data')
+config.Data.inputDataset = '/DoubleEG/Run2016E-ZElectron-PromptReco-v2/RAW-RECO'
+config.Data.publication = False
+config.Data.unitsPerJob = 10
+config.Data.splitting = 'LumiBased'
+config.Data.inputDBS = 'global'
+config.Data.lumiMask = 'https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions16/13TeV/Cert_271036-277933_13TeV_PromptReco_Collisions16_JSON_NoL1T.txt'
+config.Data.outLFNDirBase = '/store/user/fmeng/Crab3'
+config.Data.runRange = '277193-277195'
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2016-08-16 12:19:14,046: 	 self.config.JobType.psetName: eleTreeProd_Stage2_new807_SKtest_16_16.py
+INFO 2016-08-16 12:19:14,046: 	 Importing CMSSW configuration eleTreeProd_Stage2_new807_SKtest_16_16.py
+INFO 2016-08-16 12:19:20,948: 	 Finished importing CMSSW configuration eleTreeProd_Stage2_new807_SKtest_16_16.py
+DEBUG 2016-08-16 12:19:20,949: 	 Writing CMSSW configuration to /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_16_16_277194newiso/inputs/PSet.py
+DEBUG 2016-08-16 12:19:21,801: 	 The following EDM output files will be collected: []
+DEBUG 2016-08-16 12:19:21,801: 	 The following TFile output files will be collected: ['tree_testFastSim_TPG_checknow_debug_16_16_277194.root']
+DEBUG 2016-08-16 12:19:21,801: 	 The following user output files will be collected: []
+DEBUG 2016-08-16 12:19:21,801: 	 Loading required information from the environment
+DEBUG 2016-08-16 12:19:21,801: 	 Found CMSSW_8_0_14 for slc6_amd64_gcc530 with base /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14
+DEBUG 2016-08-16 12:19:21,801: 	 Making tarball in /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_16_16_277194newiso/inputs/a0ba862a-94bf-421c-8dd4-e6ba6a9e473ddefault.tgz
+DEBUG 2016-08-16 12:19:21,839: 	 Checking directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/lib
+DEBUG 2016-08-16 12:19:21,839: 	 Adding directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/lib to tarball
+DEBUG 2016-08-16 12:19:22,604: 	 Checking directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/biglib
+DEBUG 2016-08-16 12:19:22,604: 	 Adding directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/biglib to tarball
+DEBUG 2016-08-16 12:19:22,609: 	 Checking directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/module
+DEBUG 2016-08-16 12:19:25,998: 	 Adding data directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/src/L1Trigger/L1TNtuples/interface to tarball
+DEBUG 2016-08-16 12:19:26,181: 	 Adding data directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/src/L1Trigger/L1TCalorimeter/interface to tarball
+DEBUG 2016-08-16 12:19:26,345: 	 Adding data directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/src/L1Trigger/L1TCalorimeter/data to tarball
+DEBUG 2016-08-16 12:19:26,419: 	 Adding data directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/src/EGamma/ECGelec/interface to tarball
+DEBUG 2016-08-16 12:19:26,592: 	 Uploading archive /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_16_16_277194newiso/inputs/a0ba862a-94bf-421c-8dd4-e6ba6a9e473ddefault.tgz to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2016-08-16 12:19:27,362: 	 Loading required information from the environment
+DEBUG 2016-08-16 12:19:27,362: 	 Found CMSSW_8_0_14 for slc6_amd64_gcc530 with base /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14
+DEBUG 2016-08-16 12:19:27,362: 	 Making tarball in /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_16_16_277194newiso/inputs/debugFiles.tgz
+DEBUG 2016-08-16 12:19:27,367: 	 Uploading archive /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_16_16_277194newiso/inputs/debugFiles.tgz to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2016-08-16 12:19:27,713: 	 Result uploading input files: df732ee8ec5aac07985979612396cff4a7f585bdcbe77f8b8b2ca083aef8c971.tar.gz 
+DEBUG 2016-08-16 12:19:27,713: 	 Attaching lumi mask https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions16/13TeV/Cert_271036-277933_13TeV_PromptReco_Collisions16_JSON_NoL1T.txt to the request
+DEBUG 2016-08-16 12:19:27,714: 	 Downloading lumi-mask from https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions16/13TeV/Cert_271036-277933_13TeV_PromptReco_Collisions16_JSON_NoL1T.txt
+INFO 2016-08-16 12:19:27,755: 	 Sending the request to the server
+DEBUG 2016-08-16 12:19:27,755: 	 Submitting {'maxjobruntime': 1250, 'ignorelocality': 0, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T2_CH_CERN', 'algoargs': 10, 'cachefilename': 'df732ee8ec5aac07985979612396cff4a7f585bdcbe77f8b8b2ca083aef8c971.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_8_0_14', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/DoubleEG/Run2016E-ZElectron-PromptReco-v2/RAW-RECO', 'lfn': '/store/user/fmeng/Crab3', 'dryrun': 0, 'workflow': 'crab_ECAL_turnon_2016D_16_16_277194newiso', 'adduserfiles': [], 'jobarch': 'slc6_amd64_gcc530', 'lumis': ['209,497,500,1115,1117,1312,1320,1749,1754,2067,2070,2070'], 'nonprodsw': 1, 'tfileoutfiles': ['tree_testFastSim_TPG_checknow_debug_16_16_277194.root'], 'oneEventMode': 0, 'debugfilename': '99c7b74927e012d38c43ad464396d9fb15a9ae34e96db0dd9ff1682916776a48.tar.gz', 'cacheurl': 'https://cmsweb.cern.ch/crabcache', 'saveoutput': 1, 'publication': 0, 'runs': [u'277194'], 'totalunits': 0, 'splitalgo': 'LumiBased', 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': ''} 
+DEBUG 2016-08-16 12:19:27,755: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=0&useparent=0&asyncdest=T2_CH_CERN&algoargs=10&cachefilename=df732ee8ec5aac07985979612396cff4a7f585bdcbe77f8b8b2ca083aef8c971.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_8_0_14&primarydataset=&inputdata=%2FDoubleEG%2FRun2016E-ZElectron-PromptReco-v2%2FRAW-RECO&lfn=%2Fstore%2Fuser%2Ffmeng%2FCrab3&dryrun=0&workflow=crab_ECAL_turnon_2016D_16_16_277194newiso&jobarch=slc6_amd64_gcc530&nonprodsw=1&oneEventMode=0&debugfilename=99c7b74927e012d38c43ad464396d9fb15a9ae34e96db0dd9ff1682916776a48.tar.gz&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&saveoutput=1&publication=0&totalunits=0&splitalgo=LumiBased&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=&tfileoutfiles=tree_testFastSim_TPG_checknow_debug_16_16_277194.root&runs=277194&lumis=209%2C497%2C500%2C1115%2C1117%2C1312%2C1320%2C1749%2C1754%2C2067%2C2070%2C2070
+DEBUG 2016-08-16 12:19:28,137: 	 Result: {'result': [{'RequestName': '160816_101928:fmeng_crab_ECAL_turnon_2016D_16_16_277194newiso'}]}
+INFO 2016-08-16 12:19:28,139: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2016-08-16 12:19:28,139: 	 Task name: 160816_101928:fmeng_crab_ECAL_turnon_2016D_16_16_277194newiso
+INFO 2016-08-16 12:19:28,139: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2016-08-16 12:19:28,139: 	 About to return
+INFO 2016-08-16 12:19:28,143: 	 Log file is /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_16_16_277194newiso/crab.log
+DEBUG 2016-08-16 14:33:42,473: 	 Executing command: 'status'
+DEBUG 2016-08-16 14:33:42,474: 	 Found CRAB cache file /afs/cern.ch/user/f/fmeng/.crab3
+DEBUG 2016-08-16 14:33:42,482: 	 Checking credentials
+DEBUG 2016-08-16 14:33:42,482: 	 Proxy file /tmp/x509up_u44852 not found
+DEBUG 2016-08-16 14:33:42,483: 	 Creating new proxy for 24:00 hours with VO group '' and VO role 'NULL'.
+DEBUG 2016-08-16 14:34:34,217: 	 Executing : 
+ command : voms-proxy-init -voms cms:/cms -valid 24:00 -rfc
+ output : None
+ error: None
+ retcode : 0
+DEBUG 2016-08-16 14:34:35,246: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -timeleft
+ output : 86397
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 14:34:36,057: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -actimeleft
+ output : 86397
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 14:34:36,864: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u44852 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+/cms/uscms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 14:34:36,865: 	 Proxy created.
+DEBUG 2016-08-16 14:34:44,463: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 14:34:44,463: 	 Checking credentials
+DEBUG 2016-08-16 14:34:44,465: 	 Found proxy file /tmp/x509up_u44852
+DEBUG 2016-08-16 14:34:44,465: 	 Getting proxy life time left
+DEBUG 2016-08-16 14:34:45,287: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -timeleft
+ output : 86387
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 14:34:46,005: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -actimeleft
+ output : 86387
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 14:34:46,006: 	 Proxy valid for 23:59:47 hours
+DEBUG 2016-08-16 14:34:46,424: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-08-16 14:34:46,541: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 14:34:46,541: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-08-16 14:34:46,541: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng_cmsweb.cern.ch for credential name
+DEBUG 2016-08-16 14:34:46,945: 	 Executing : 
+ command : myproxy-info -l 636d357baa3ec31ce0a2357e2fd568934f039cc9 -s myproxy.cern.ch
+ output : username: 636d357baa3ec31ce0a2357e2fd568934f039cc9
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 571:32:07  (23.8 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-08-16 14:34:46,946: 	 Myproxy is valid: 2057527
+DEBUG 2016-08-16 14:34:46,946: 	 Command use: status
+DEBUG 2016-08-16 14:34:46,946: 	 Options use: ['-d', 'crab_projects/crab_ECAL_turnon_2016D_16_16_277194newiso/']
+DEBUG 2016-08-16 14:34:47,318: 	 CRABClient version: 3.3.1607.patch2
+DEBUG 2016-08-16 14:34:47,318: 	 Instance is prod
+DEBUG 2016-08-16 14:34:47,318: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-08-16 14:34:47,318: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-08-16 14:34:47,319: 	 Looking up detailed status of task 160816_101928:fmeng_crab_ECAL_turnon_2016D_16_16_277194newiso
+DEBUG 2016-08-16 14:34:49,503: 	 {'status': 'COMPLETED', 'username': 'fmeng', 'jobsPerStatus': {'finished': 185}, 'jobs': {'133': {'State': 'finished'}, '132': {'State': 'finished'}, '131': {'State': 'finished'}, '130': {'State': 'finished'}, '137': {'State': 'finished'}, '136': {'State': 'finished'}, '135': {'State': 'finished'}, '134': {'State': 'finished'}, '139': {'State': 'finished'}, '138': {'State': 'finished'}, '93': {'State': 'finished'}, '24': {'State': 'finished'}, '25': {'State': 'finished'}, '26': {'State': 'finished'}, '27': {'State': 'finished'}, '20': {'State': 'finished'}, '21': {'State': 'finished'}, '22': {'State': 'finished'}, '23': {'State': 'finished'}, '95': {'State': 'finished'}, '28': {'State': 'finished'}, '29': {'State': 'finished'}, '94': {'State': 'finished'}, '4': {'State': 'finished'}, '8': {'State': 'finished'}, '96': {'State': 'finished'}, '68': {'State': 'finished'}, '120': {'State': 'finished'}, '121': {'State': 'finished'}, '122': {'State': 'finished'}, '123': {'State': 'finished'}, '124': {'State': 'finished'}, '125': {'State': 'finished'}, '126': {'State': 'finished'}, '127': {'State': 'finished'}, '128': {'State': 'finished'}, '129': {'State': 'finished'}, '69': {'State': 'finished'}, '91': {'State': 'finished'}, '59': {'State': 'finished'}, '58': {'State': 'finished'}, '55': {'State': 'finished'}, '54': {'State': 'finished'}, '57': {'State': 'finished'}, '56': {'State': 'finished'}, '51': {'State': 'finished'}, '50': {'State': 'finished'}, '53': {'State': 'finished'}, '52': {'State': 'finished'}, '90': {'State': 'finished'}, '66': {'State': 'finished'}, '67': {'State': 'finished'}, '115': {'State': 'finished'}, '114': {'State': 'finished'}, '88': {'State': 'finished'}, '89': {'State': 'finished'}, '111': {'State': 'finished'}, '110': {'State': 'finished'}, '113': {'State': 'finished'}, '112': {'State': 'finished'}, '82': {'State': 'finished'}, '83': {'State': 'finished'}, '80': {'State': 'finished'}, '81': {'State': 'finished'}, '119': {'State': 'finished'}, '118': {'State': 'finished'}, '84': {'State': 'finished'}, '85': {'State': 'finished'}, '3': {'State': 'finished'}, '7': {'State': 'finished'}, '92': {'State': 'finished'}, '108': {'State': 'finished'}, '109': {'State': 'finished'}, '102': {'State': 'finished'}, '103': {'State': 'finished'}, '100': {'State': 'finished'}, '101': {'State': 'finished'}, '106': {'State': 'finished'}, '107': {'State': 'finished'}, '104': {'State': 'finished'}, '105': {'State': 'finished'}, '39': {'State': 'finished'}, '38': {'State': 'finished'}, '33': {'State': 'finished'}, '32': {'State': 'finished'}, '31': {'State': 'finished'}, '30': {'State': 'finished'}, '37': {'State': 'finished'}, '36': {'State': 'finished'}, '35': {'State': 'finished'}, '34': {'State': 'finished'}, '60': {'State': 'finished'}, '61': {'State': 'finished'}, '62': {'State': 'finished'}, '63': {'State': 'finished'}, '64': {'State': 'finished'}, '65': {'State': 'finished'}, '179': {'State': 'finished'}, '178': {'State': 'finished'}, '177': {'State': 'finished'}, '176': {'State': 'finished'}, '175': {'State': 'finished'}, '174': {'State': 'finished'}, '173': {'State': 'finished'}, '172': {'State': 'finished'}, '171': {'State': 'finished'}, '170': {'State': 'finished'}, '182': {'State': 'finished'}, '183': {'State': 'finished'}, '180': {'State': 'finished'}, '181': {'State': 'finished'}, '184': {'State': 'finished'}, '6': {'State': 'finished'}, '97': {'State': 'finished'}, '185': {'State': 'finished'}, '99': {'State': 'finished'}, '98': {'State': 'finished'}, '168': {'State': 'finished'}, '169': {'State': 'finished'}, '164': {'State': 'finished'}, '165': {'State': 'finished'}, '166': {'State': 'finished'}, '167': {'State': 'finished'}, '160': {'State': 'finished'}, '161': {'State': 'finished'}, '162': {'State': 'finished'}, '163': {'State': 'finished'}, '11': {'State': 'finished'}, '10': {'State': 'finished'}, '13': {'State': 'finished'}, '12': {'State': 'finished'}, '15': {'State': 'finished'}, '14': {'State': 'finished'}, '17': {'State': 'finished'}, '16': {'State': 'finished'}, '19': {'State': 'finished'}, '18': {'State': 'finished'}, '117': {'State': 'finished'}, '116': {'State': 'finished'}, '151': {'State': 'finished'}, '150': {'State': 'finished'}, '153': {'State': 'finished'}, '152': {'State': 'finished'}, '155': {'State': 'finished'}, '154': {'State': 'finished'}, '157': {'State': 'finished'}, '156': {'State': 'finished'}, '159': {'State': 'finished'}, '158': {'State': 'finished'}, '48': {'State': 'finished'}, '49': {'State': 'finished'}, '46': {'State': 'finished'}, '86': {'State': 'finished'}, '44': {'State': 'finished'}, '45': {'State': 'finished'}, '42': {'State': 'finished'}, '43': {'State': 'finished'}, '40': {'State': 'finished'}, '87': {'State': 'finished'}, '1': {'State': 'finished'}, '5': {'State': 'finished'}, '9': {'State': 'finished'}, '146': {'State': 'finished'}, '147': {'State': 'finished'}, '144': {'State': 'finished'}, '145': {'State': 'finished'}, '142': {'State': 'finished'}, '143': {'State': 'finished'}, '140': {'State': 'finished'}, '141': {'State': 'finished'}, '148': {'State': 'finished'}, '149': {'State': 'finished'}, '77': {'State': 'finished'}, '76': {'State': 'finished'}, '75': {'State': 'finished'}, '74': {'State': 'finished'}, '73': {'State': 'finished'}, '72': {'State': 'finished'}, '71': {'State': 'finished'}, '70': {'State': 'finished'}, '79': {'State': 'finished'}, '78': {'State': 'finished'}, '2': {'State': 'finished'}, '41': {'State': 'finished'}, '47': {'State': 'finished'}}, 'publication': {'disabled': []}, 'taskWarningMsg': [], 'schedd': 'crab3-3@submit-4.t2.ucsd.edu', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1471342768, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['finished', 165], ['finished', 133], ['finished', 132], ['finished', 131], ['finished', 130], ['finished', 137], ['finished', 136], ['finished', 135], ['finished', 134], ['finished', 139], ['finished', 138], ['finished', 166], ['finished', 24], ['finished', 25], ['finished', 26], ['finished', 27], ['finished', 20], ['finished', 21], ['finished', 22], ['finished', 23], ['finished', 160], ['finished', 28], ['finished', 29], ['finished', 161], ['finished', 4], ['finished', 8], ['finished', 163], ['finished', 119], ['finished', 120], ['finished', 121], ['finished', 122], ['finished', 123], ['finished', 124], ['finished', 125], ['finished', 126], ['finished', 127], ['finished', 128], ['finished', 129], ['finished', 167], ['finished', 118], ['finished', 59], ['finished', 58], ['finished', 55], ['finished', 54], ['finished', 57], ['finished', 56], ['finished', 51], ['finished', 50], ['finished', 53], ['finished', 52], ['finished', 164], ['finished', 179], ['finished', 178], ['finished', 115], ['finished', 114], ['finished', 88], ['finished', 89], ['finished', 111], ['finished', 110], ['finished', 113], ['finished', 112], ['finished', 82], ['finished', 83], ['finished', 80], ['finished', 81], ['finished', 86], ['finished', 87], ['finished', 84], ['finished', 85], ['finished', 3], ['finished', 177], ['finished', 7], ['finished', 108], ['finished', 109], ['finished', 102], ['finished', 103], ['finished', 100], ['finished', 101], ['finished', 106], ['finished', 107], ['finished', 104], ['finished', 105], ['finished', 39], ['finished', 38], ['finished', 33], ['finished', 32], ['finished', 31], ['finished', 30], ['finished', 37], ['finished', 36], ['finished', 35], ['finished', 34], ['finished', 176], ['finished', 60], ['finished', 61], ['finished', 62], ['finished', 63], ['finished', 64], ['finished', 65], ['finished', 66], ['finished', 67], ['finished', 68], ['finished', 69], ['finished', 175], ['finished', 174], ['finished', 173], ['finished', 172], ['finished', 171], ['finished', 170], ['finished', 181], ['finished', 182], ['finished', 183], ['finished', 180], ['finished', 2], ['finished', 162], ['finished', 184], ['finished', 6], ['finished', 185], ['finished', 99], ['finished', 98], ['finished', 168], ['finished', 169], ['finished', 91], ['finished', 90], ['finished', 93], ['finished', 92], ['finished', 95], ['finished', 94], ['finished', 97], ['finished', 96], ['finished', 11], ['finished', 10], ['finished', 13], ['finished', 12], ['finished', 15], ['finished', 14], ['finished', 17], ['finished', 16], ['finished', 19], ['finished', 18], ['finished', 117], ['finished', 116], ['finished', 151], ['finished', 150], ['finished', 153], ['finished', 152], ['finished', 155], ['finished', 154], ['finished', 157], ['finished', 156], ['finished', 159], ['finished', 158], ['finished', 48], ['finished', 49], ['finished', 46], ['finished', 47], ['finished', 44], ['finished', 45], ['finished', 42], ['finished', 43], ['finished', 40], ['finished', 41], ['finished', 1], ['finished', 5], ['finished', 9], ['finished', 146], ['finished', 147], ['finished', 144], ['finished', 145], ['finished', 142], ['finished', 143], ['finished', 140], ['finished', 141], ['finished', 148], ['finished', 149], ['finished', 77], ['finished', 76], ['finished', 75], ['finished', 74], ['finished', 73], ['finished', 72], ['finished', 71], ['finished', 70], ['finished', 79], ['finished', 78]]}
+INFO 2016-08-16 14:34:49,503: 	 CRAB project directory:		/afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_16_16_277194newiso
+INFO 2016-08-16 14:34:49,503: 	 Task name:			160816_101928:fmeng_crab_ECAL_turnon_2016D_16_16_277194newiso
+INFO 2016-08-16 14:34:49,503: 	 Grid scheduler:			crab3-3@submit-4.t2.ucsd.edu
+INFO 2016-08-16 14:34:49,504: 	 Task status:			COMPLETED
+INFO 2016-08-16 14:34:49,504: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=fmeng&table=Mains&pattern=160816_101928%3Afmeng_crab_ECAL_turnon_2016D_16_16_277194newiso
+INFO 2016-08-16 14:34:49,504: 	 
+Jobs status:			finished      100.0% (185/185)
+INFO 2016-08-16 14:34:49,504: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2016-08-16 14:34:49,527: 	 Log file is /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_14/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_16_16_277194newiso/crab.log

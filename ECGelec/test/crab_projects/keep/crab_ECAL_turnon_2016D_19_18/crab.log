@@ -1,0 +1,315 @@
+ ################################################################### 
+ # WARNING: this module is deprecated.                             # 
+ # Please use CondCore.CondDB.CondDB_cfi.py                        # 
+ ################################################################### 
+L1TRawToDigi Sequence configured for Stage-2 (2016) trigger. 
+# Conditions read from  CMS_CONDITIONS  via FrontierProd 
+L1TCalorimeter Sequence configured for Stage-2 (2016) trigger. 
+L1TMuon Sequence configured for Stage-2 (2016) trigger. 
+L1TGlobal Sequence configured for Stage-2 (2016) trigger. 
+L1TCalorimeter Conditions configured for Stage-2 (2016) trigger. 
+L1TMuon Conditions configured for Stage-2 (2016) trigger. 
+L1TGlobal Conditions configured for Stage-2 (2016) trigger. 
+L1TReEmulPath sequence:  
+simEcalTriggerPrimitiveDigis+simHcalTriggerPrimitiveDigis+simCaloStage2Layer1Digis+simCaloStage2Digis+simDtTriggerPrimitiveDigis+simCscTriggerPrimitiveDigis+simTwinMuxDigis+simBmtfDigis+simEmtfDigis+simOmtfDigis+simGmtCaloSumDigis+simMuonQualityAdjusterDigis+simGmtStage2Digis+simGtExtFakeStage2Digis+simGtStage2Digis
+cms.Schedule(csctfDigis+dttfDigis+gtDigis+caloStage1Digis+caloStage1FinalDigis+caloStage1LegacyFormatDigis+gctDigis+bmtfDigis+caloStage2Digis+gmtStage2Digis+gtStage2Digis+siPixelDigis+siStripDigis+ecalDigis+ecalPreshowerDigis+hcalDigis+muonCSCDigis+muonDTDigis+muonRPCDigis+castorDigis+scalersRawToDigi+tcdsDigis+totemTriggerRawToDigi+totemRPRawToDigi, MEtoEDMConverter, simEcalTriggerPrimitiveDigis+simHcalTriggerPrimitiveDigis+simCaloStage2Layer1Digis+simCaloStage2Digis+simDtTriggerPrimitiveDigis+simCscTriggerPrimitiveDigis+simTwinMuxDigis+simBmtfDigis+simEmtfDigis+simOmtfDigis+simGmtCaloSumDigis+simMuonQualityAdjusterDigis+simGmtStage2Digis+simGtExtFakeStage2Digis+simGtStage2Digis)
+DEBUG 2016-07-16 10:23:52,163: 	 Executing command: 'submit'
+DEBUG 2016-07-16 10:23:52,164: 	 Found CRAB cache file /afs/cern.ch/user/f/fmeng/.crab3
+DEBUG 2016-07-16 10:23:52,173: 	 Checking credentials
+DEBUG 2016-07-16 10:23:52,173: 	 Found proxy file /tmp/x509up_u44852
+DEBUG 2016-07-16 10:23:52,173: 	 Getting proxy life time left
+DEBUG 2016-07-16 10:23:52,780: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -timeleft
+ output : 42195
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 10:23:53,284: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -actimeleft
+ output : 42194
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 10:23:53,284: 	 Proxy valid for 11:43:15 hours
+INFO 2016-07-16 10:23:53,284: 	 Will use CRAB configuration file crab3_2015D_turnon_19_18new.py
+DEBUG 2016-07-16 10:23:53,285: 	 Loading CRAB configuration file.
+DEBUG 2016-07-16 10:23:53,289: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2016-07-16 10:23:53,415: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 10:23:53,416: 	 Checking credentials
+DEBUG 2016-07-16 10:23:53,416: 	 Found proxy file /tmp/x509up_u44852
+DEBUG 2016-07-16 10:23:53,416: 	 Getting proxy life time left
+DEBUG 2016-07-16 10:23:53,921: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -timeleft
+ output : 42194
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 10:23:54,427: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -actimeleft
+ output : 42193
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 10:23:54,427: 	 Proxy valid for 11:43:14 hours
+DEBUG 2016-07-16 10:23:54,931: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u44852 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+/cms/uscms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 10:23:55,208: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-07-16 10:23:55,319: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 10:23:55,319: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-07-16 10:23:55,319: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng_cmsweb.cern.ch for credential name
+DEBUG 2016-07-16 10:23:55,924: 	 Executing : 
+ command : myproxy-info -l 636d357baa3ec31ce0a2357e2fd568934f039cc9 -s myproxy.cern.ch
+ output : username: 636d357baa3ec31ce0a2357e2fd568934f039cc9
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 463:22:12  (19.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 10:23:55,925: 	 Myproxy is valid: 1668132
+DEBUG 2016-07-16 10:23:55,925: 	 Command use: submit
+DEBUG 2016-07-16 10:23:55,925: 	 Options use: ['-c', 'crab3_2015D_turnon_19_18new.py']
+DEBUG 2016-07-16 10:23:56,230: 	 CRABClient version: 3.3.1607
+DEBUG 2016-07-16 10:23:56,230: 	 Instance is prod
+DEBUG 2016-07-16 10:23:56,231: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-07-16 10:23:56,231: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-07-16 10:23:56,231: 	 Started submission
+DEBUG 2016-07-16 10:23:56,231: 	 Working on /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_19_18
+DEBUG 2016-07-16 10:23:56,504: 	 Loading required information from the environment
+DEBUG 2016-07-16 10:23:56,504: 	 Found CMSSW_8_0_12 for slc6_amd64_gcc530 with base /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12
+DEBUG 2016-07-16 10:23:56,527: 	 UNIQUE NAME: tarUUID 4d0dbf9e-2b68-4715-a322-f8f32e5a0aca 
+DEBUG 2016-07-16 10:23:56,527: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = False
+config.General.transferOutputs = True
+config.General.workArea = 'crab_projects'
+config.General.requestName = 'ECAL_turnon_2016D_19_18'
+config.section_('JobType')
+config.JobType.psetName = 'eleTreeProd_Stage2_new807_SKtest_19_18.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.allowUndistributedCMSSW = True
+config.section_('Data')
+config.Data.inputDataset = '/DoubleEG/Run2016B-ZElectron-PromptReco-v2/RAW-RECO'
+config.Data.publication = False
+config.Data.unitsPerJob = 100
+config.Data.splitting = 'LumiBased'
+config.Data.inputDBS = 'global'
+config.Data.lumiMask = 'https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions16/13TeV/Cert_271036-275125_13TeV_PromptReco_Collisions16_JSON.txt'
+config.Data.outLFNDirBase = '/store/user/fmeng/Crab3'
+config.Data.runRange = '273158-273302'
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2016-07-16 10:23:56,527: 	 self.config.JobType.psetName: eleTreeProd_Stage2_new807_SKtest_19_18.py
+INFO 2016-07-16 10:23:56,527: 	 Importing CMSSW configuration eleTreeProd_Stage2_new807_SKtest_19_18.py
+INFO 2016-07-16 10:23:59,091: 	 Finished importing CMSSW configuration eleTreeProd_Stage2_new807_SKtest_19_18.py
+DEBUG 2016-07-16 10:23:59,091: 	 Writing CMSSW configuration to /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_19_18/inputs/PSet.py
+DEBUG 2016-07-16 10:23:59,894: 	 The following EDM output files will be collected: []
+DEBUG 2016-07-16 10:23:59,894: 	 The following TFile output files will be collected: ['tree_testFastSim_TPG_checknow_debug_19_18_new.root']
+DEBUG 2016-07-16 10:23:59,894: 	 The following user output files will be collected: []
+DEBUG 2016-07-16 10:23:59,894: 	 Loading required information from the environment
+DEBUG 2016-07-16 10:23:59,894: 	 Found CMSSW_8_0_12 for slc6_amd64_gcc530 with base /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12
+DEBUG 2016-07-16 10:23:59,895: 	 Making tarball in /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_19_18/inputs/4d0dbf9e-2b68-4715-a322-f8f32e5a0acadefault.tgz
+DEBUG 2016-07-16 10:23:59,895: 	 Checking directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/lib
+DEBUG 2016-07-16 10:23:59,895: 	 Adding directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/lib to tarball
+DEBUG 2016-07-16 10:24:00,220: 	 Checking directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/biglib
+DEBUG 2016-07-16 10:24:00,220: 	 Adding directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/biglib to tarball
+DEBUG 2016-07-16 10:24:00,221: 	 Checking directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/module
+DEBUG 2016-07-16 10:24:00,231: 	 Adding data directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/src/EGamma/ECGelec/interface to tarball
+DEBUG 2016-07-16 10:24:00,233: 	 Adding data directory /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/src/L1Trigger/L1TCalorimeter/interface to tarball
+DEBUG 2016-07-16 10:24:00,422: 	 Uploading archive /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_19_18/inputs/4d0dbf9e-2b68-4715-a322-f8f32e5a0acadefault.tgz to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2016-07-16 10:24:01,059: 	 Loading required information from the environment
+DEBUG 2016-07-16 10:24:01,059: 	 Found CMSSW_8_0_12 for slc6_amd64_gcc530 with base /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12
+DEBUG 2016-07-16 10:24:01,059: 	 Making tarball in /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_19_18/inputs/debugFiles.tgz
+DEBUG 2016-07-16 10:24:01,063: 	 Uploading archive /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_19_18/inputs/debugFiles.tgz to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2016-07-16 10:24:01,344: 	 Result uploading input files: 83f4ddb7c6485881d0c851fc4461621c5e73f52b386cf53043680791052902c5.tar.gz 
+DEBUG 2016-07-16 10:24:01,344: 	 Attaching lumi mask https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions16/13TeV/Cert_271036-275125_13TeV_PromptReco_Collisions16_JSON.txt to the request
+DEBUG 2016-07-16 10:24:01,344: 	 Downloading lumi-mask from https://cms-service-dqm.web.cern.ch/cms-service-dqm/CAF/certification/Collisions16/13TeV/Cert_271036-275125_13TeV_PromptReco_Collisions16_JSON.txt
+INFO 2016-07-16 10:24:01,390: 	 Sending the request to the server
+DEBUG 2016-07-16 10:24:01,390: 	 Submitting {'maxjobruntime': 1250, 'ignorelocality': 0, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T2_CH_CERN', 'algoargs': 100, 'cachefilename': '83f4ddb7c6485881d0c851fc4461621c5e73f52b386cf53043680791052902c5.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_8_0_12', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/DoubleEG/Run2016B-ZElectron-PromptReco-v2/RAW-RECO', 'lfn': '/store/user/fmeng/Crab3', 'dryrun': 0, 'workflow': 'crab_ECAL_turnon_2016D_19_18', 'adduserfiles': [], 'jobarch': 'slc6_amd64_gcc530', 'lumis': ['1,1279', '1,459'], 'nonprodsw': 1, 'tfileoutfiles': ['tree_testFastSim_TPG_checknow_debug_19_18_new.root'], 'oneEventMode': 0, 'debugfilename': '9a145e5cca324035eb5579cbdeda671a46ceb64c2545b6a3752427c881ed3334.tar.gz', 'cacheurl': 'https://cmsweb.cern.ch/crabcache', 'saveoutput': 1, 'publication': 0, 'runs': [u'273158', u'273302'], 'totalunits': 0, 'splitalgo': 'LumiBased', 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': ''} 
+DEBUG 2016-07-16 10:24:01,391: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=0&useparent=0&asyncdest=T2_CH_CERN&algoargs=100&cachefilename=83f4ddb7c6485881d0c851fc4461621c5e73f52b386cf53043680791052902c5.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_8_0_12&primarydataset=&inputdata=%2FDoubleEG%2FRun2016B-ZElectron-PromptReco-v2%2FRAW-RECO&lfn=%2Fstore%2Fuser%2Ffmeng%2FCrab3&dryrun=0&workflow=crab_ECAL_turnon_2016D_19_18&jobarch=slc6_amd64_gcc530&nonprodsw=1&oneEventMode=0&debugfilename=9a145e5cca324035eb5579cbdeda671a46ceb64c2545b6a3752427c881ed3334.tar.gz&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&saveoutput=1&publication=0&totalunits=0&splitalgo=LumiBased&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=&tfileoutfiles=tree_testFastSim_TPG_checknow_debug_19_18_new.root&runs=273158&runs=273302&lumis=1%2C1279&lumis=1%2C459
+DEBUG 2016-07-16 10:24:03,481: 	 Result: {'result': [{'RequestName': '160716_082402:fmeng_crab_ECAL_turnon_2016D_19_18'}]}
+INFO 2016-07-16 10:24:03,484: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2016-07-16 10:24:03,484: 	 Task name: 160716_082402:fmeng_crab_ECAL_turnon_2016D_19_18
+INFO 2016-07-16 10:24:03,484: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2016-07-16 10:24:03,484: 	 About to return
+INFO 2016-07-16 10:24:03,487: 	 Log file is /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_19_18/crab.log
+DEBUG 2016-07-16 18:49:41,219: 	 Executing command: 'status'
+DEBUG 2016-07-16 18:49:41,219: 	 Found CRAB cache file /afs/cern.ch/user/f/fmeng/.crab3
+DEBUG 2016-07-16 18:49:41,226: 	 Checking credentials
+DEBUG 2016-07-16 18:49:41,227: 	 Found proxy file /tmp/x509up_u44852
+DEBUG 2016-07-16 18:49:41,227: 	 Getting proxy life time left
+DEBUG 2016-07-16 18:49:41,833: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -timeleft
+ output : 86361
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 18:49:42,538: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -actimeleft
+ output : 86360
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 18:49:42,539: 	 Proxy valid for 23:59:21 hours
+DEBUG 2016-07-16 18:49:42,803: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 18:49:42,803: 	 Checking credentials
+DEBUG 2016-07-16 18:49:42,803: 	 Found proxy file /tmp/x509up_u44852
+DEBUG 2016-07-16 18:49:42,803: 	 Getting proxy life time left
+DEBUG 2016-07-16 18:49:43,407: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -timeleft
+ output : 86359
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 18:49:44,014: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -actimeleft
+ output : 86359
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 18:49:44,014: 	 Proxy valid for 23:59:19 hours
+DEBUG 2016-07-16 18:49:44,373: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-07-16 18:49:44,505: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 18:49:44,505: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-07-16 18:49:44,505: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng_cmsweb.cern.ch for credential name
+DEBUG 2016-07-16 18:49:44,709: 	 Executing : 
+ command : myproxy-info -l 636d357baa3ec31ce0a2357e2fd568934f039cc9 -s myproxy.cern.ch
+ output : username: 636d357baa3ec31ce0a2357e2fd568934f039cc9
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 454:56:23  (19.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 18:49:44,710: 	 Myproxy is valid: 1637783
+DEBUG 2016-07-16 18:49:44,710: 	 Command use: status
+DEBUG 2016-07-16 18:49:44,710: 	 Options use: ['-d', 'crab_ECAL_turnon_2016D_19_18']
+DEBUG 2016-07-16 18:49:45,035: 	 CRABClient version: 3.3.1607
+DEBUG 2016-07-16 18:49:45,035: 	 Instance is prod
+DEBUG 2016-07-16 18:49:45,035: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-07-16 18:49:45,035: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-07-16 18:49:45,035: 	 Looking up detailed status of task 160716_082402:fmeng_crab_ECAL_turnon_2016D_19_18
+DEBUG 2016-07-16 18:49:45,396: 	 {'status': 'FAILED', 'username': 'fmeng', 'jobsPerStatus': {'failed': 1, 'finished': 17}, 'jobs': {'11': {'State': 'finished'}, '10': {'State': 'finished'}, '13': {'State': 'finished'}, '12': {'State': 'finished'}, '15': {'State': 'finished'}, '14': {'State': 'finished'}, '17': {'State': 'finished'}, '16': {'State': 'finished'}, '18': {'State': 'finished'}, '1': {'State': 'finished'}, '3': {'State': 'finished'}, '2': {'State': 'finished'}, '5': {'State': 'failed', 'Error': [50660, 'Not retrying job due to excessive memory use (job automatically killed on the worker node)', {}]}, '4': {'State': 'finished'}, '7': {'State': 'finished'}, '6': {'State': 'finished'}, '9': {'State': 'finished'}, '8': {'State': 'finished'}}, 'publication': {'disabled': []}, 'taskWarningMsg': [], 'schedd': 'crab3@vocms0112.cern.ch', 'publicationFailures': {}, 'outdatasets': None, 'statusFailureMsg': '', 'taskFailureMsg': '', 'failedJobdefs': 0, 'ASOURL': 'https://cmsweb.cern.ch/couchdb2', 'command': 'SUBMIT', 'totalJobdefs': 0, 'submissionTime': 1468657443, 'jobdefErrors': [], 'collector': 'cmsgwms-collector-global.cern.ch,cmssrv221.fnal.gov', 'jobList': [['finished', 11], ['finished', 10], ['finished', 13], ['finished', 12], ['finished', 15], ['finished', 14], ['finished', 17], ['finished', 16], ['finished', 18], ['finished', 1], ['finished', 3], ['finished', 2], ['failed', 5], ['finished', 4], ['finished', 7], ['finished', 6], ['finished', 9], ['finished', 8]]}
+INFO 2016-07-16 18:49:45,396: 	 CRAB project directory:		/afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_19_18
+INFO 2016-07-16 18:49:45,396: 	 Task name:			160716_082402:fmeng_crab_ECAL_turnon_2016D_19_18
+INFO 2016-07-16 18:49:45,396: 	 Grid scheduler:			crab3@vocms0112.cern.ch
+INFO 2016-07-16 18:49:45,396: 	 Task status:			FAILED
+INFO 2016-07-16 18:49:45,396: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=fmeng&table=Mains&pattern=160716_082402%3Afmeng_crab_ECAL_turnon_2016D_19_18
+INFO 2016-07-16 18:49:45,397: 	 
+Jobs status:			failed          5.6% ( 1/18)
+INFO 2016-07-16 18:49:45,397: 	 				finished       94.4% (17/18)
+INFO 2016-07-16 18:49:45,397: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2016-07-16 18:49:45,397: 	 
+Error Summary: (use crab status --verboseErrors for details about the errors)
+
+ 1 jobs failed with exit code 50660
+
+Have a look at https://twiki.cern.ch/twiki/bin/viewauth/CMSPublic/JobExitCodes for a description of the exit codes.
+INFO 2016-07-16 18:49:45,403: 	 Log file is /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_19_18/crab.log
+DEBUG 2016-07-16 18:50:03,511: 	 Executing command: 'resubmit'
+DEBUG 2016-07-16 18:50:03,511: 	 Found CRAB cache file /afs/cern.ch/user/f/fmeng/.crab3
+DEBUG 2016-07-16 18:50:03,523: 	 Checking credentials
+DEBUG 2016-07-16 18:50:03,523: 	 Found proxy file /tmp/x509up_u44852
+DEBUG 2016-07-16 18:50:03,523: 	 Getting proxy life time left
+DEBUG 2016-07-16 18:50:04,127: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -timeleft
+ output : 86338
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 18:50:04,632: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -actimeleft
+ output : 86338
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 18:50:04,632: 	 Proxy valid for 23:58:58 hours
+DEBUG 2016-07-16 18:50:04,745: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 18:50:04,745: 	 Checking credentials
+DEBUG 2016-07-16 18:50:04,745: 	 Found proxy file /tmp/x509up_u44852
+DEBUG 2016-07-16 18:50:04,745: 	 Getting proxy life time left
+DEBUG 2016-07-16 18:50:05,349: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -timeleft
+ output : 86337
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 18:50:05,963: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u44852 -actimeleft
+ output : 86337
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 18:50:05,963: 	 Proxy valid for 23:58:57 hours
+DEBUG 2016-07-16 18:50:06,320: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-07-16 18:50:06,429: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 18:50:06,430: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-07-16 18:50:06,430: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng_cmsweb.cern.ch for credential name
+DEBUG 2016-07-16 18:50:06,834: 	 Executing : 
+ command : myproxy-info -l 636d357baa3ec31ce0a2357e2fd568934f039cc9 -s myproxy.cern.ch
+ output : username: 636d357baa3ec31ce0a2357e2fd568934f039cc9
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=fmeng/CN=745092/CN=Fanbo Meng
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 454:56:01  (19.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 18:50:06,837: 	 Myproxy is valid: 1637761
+DEBUG 2016-07-16 18:50:06,837: 	 Command use: resubmit
+DEBUG 2016-07-16 18:50:06,837: 	 Options use: ['-d', 'crab_ECAL_turnon_2016D_19_18']
+DEBUG 2016-07-16 18:50:07,215: 	 CRABClient version: 3.3.1607
+DEBUG 2016-07-16 18:50:07,216: 	 Instance is prod
+DEBUG 2016-07-16 18:50:07,216: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-07-16 18:50:07,216: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-07-16 18:50:07,216: 	 Requesting resubmission of failed jobs in task 160716_082402:fmeng_crab_ECAL_turnon_2016D_19_18
+INFO 2016-07-16 18:50:07,216: 	 Sending resubmit request to the server.
+DEBUG 2016-07-16 18:50:07,216: 	 Submitting {'publication': 0, 'force': 0, 'subresource': 'resubmit', 'workflow': '160716_082402:fmeng_crab_ECAL_turnon_2016D_19_18'} 
+DEBUG 2016-07-16 18:50:07,217: 	 Encoded resubmit request: publication=0&force=0&subresource=resubmit&workflow=160716_082402%3Afmeng_crab_ECAL_turnon_2016D_19_18
+DEBUG 2016-07-16 18:50:08,040: 	 Result: {'result': [{'result': 'ok'}], 'desc': {'columns': ['tm_site_blacklist', 'tm_site_whitelist', 'tm_maxjobruntime', 'tm_maxmemory', 'tm_numcores', 'tm_priority']}}
+INFO 2016-07-16 18:50:08,041: 	 Resubmit request sent to the server.
+INFO 2016-07-16 18:50:08,041: 	 Please use 'crab status' to check how the resubmission process proceeds.
+Notice it may take a couple of minutes for the resubmission to get fully processed.
+INFO 2016-07-16 18:50:08,043: 	 Log file is /afs/cern.ch/work/f/fmeng/FANBOWORKINGAREA/CMSSW_8_0_12/src/EGamma/ECGelec/test/crab_projects/crab_ECAL_turnon_2016D_19_18/crab.log
